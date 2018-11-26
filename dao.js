@@ -6,7 +6,7 @@ module.exports = {
 	salvar(dados, callback){
 		mongoose.connect('mongodb://localhost:27017/meustrabalhos')
 
-		let t = new Uniall(dados)
+		let t = new trabalhos(dados)
 		t.save(() =>  {
 			mongoose.disconnect()
 			callback()
