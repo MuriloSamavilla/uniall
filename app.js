@@ -8,14 +8,14 @@ app.use(express.json())
 
 app.use((req, res, next) => {
   var page = 'index.html';
-  if(request.url != '/'){
+//  if(request.url != '/'){
     page = req.url+'.html';
-  }
+//  }
 
   fs.readFile('./'+page, function(err, data){
-    if(err){
-      throw err;
-    }
+//    if(err){
+//      throw err;
+//    }
   })
 
   res.header("Access-Control-Allow-Origin", "*");

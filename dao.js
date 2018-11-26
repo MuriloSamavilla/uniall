@@ -1,13 +1,12 @@
 const mongoose = require('mongoose')
-const Uniall = require('./model')
-
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/unica')
+const trabalhos = require('./model')
 
 module.exports = {
-	
+
 	salvar(dados, callback){
-	let t = new UniAll(dados)
+		mongoose.connect('mongodb://localhost:27017/meustrabalhos')
+
+		let t = new Uniall(dados)
 		t.save(() =>  {
 			mongoose.disconnect()
 			callback()
@@ -15,7 +14,9 @@ module.exports = {
 	},
 
 	listar(callback){
-		Trabalho.find( (err, res) => {
+		mongoose.connect('mongodb://localhost:27017/meustrabalhos')
+
+		trabalhos.find( (err, res) => {
 			mongoose.disconnect()
 			callback(res)
 		})

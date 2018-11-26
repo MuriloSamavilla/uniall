@@ -1,28 +1,10 @@
 const mongoose = require('mongoose')
 
 const schema = new mongoose.Schema({
-	user : String,
-	senha : String,
-	nome: String,
-	idade: Number,
-	telefone: Number,
-	cpf: Number,
-	email: String,
-	dtnascimento : Date,
-	oferecer: String,
-	necessita: String,
-	animal: Number,
-	pergunta1 : Number,
-	pergunta2 : Number,
-	pergunta3 : Number,
-	pergunta4 : Number,
-	pergunta5 : Number,
-	pergunta6 : Number,
-	pergunta7 : Number,
-	pergunta8 : Number,
-	pergunta9 : Number,
-	pergunta10 : Number,
+	titulo : String,
+	peso : String,
+	data: Date,
 
 })
 
-module.exports = mongoose.model("Uniall", schema)
+module.exports = mongoose.model("trabalhos", schema)
