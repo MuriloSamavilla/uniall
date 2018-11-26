@@ -1,15 +1,27 @@
 {
-  "name": "Unive",
+  "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "server",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Murilo",
   "license": "ISC",
   "dependencies": {
-    "materialize-css": "^1.0.0"
-  }
+    "express": "^4.16.4",
+    "materialize-css": "^1.0.0",
+    "mongodb": "^3.1.9",
+    "mongoose": "^5.3.11"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuriloSamavilla/uniall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MuriloSamavilla/uniall/issues"
+  },
+  "homepage": "https://github.com/MuriloSamavilla/uniall#readme"
 }
